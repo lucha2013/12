@@ -11,7 +11,7 @@ namespace ClassLibrary1
         float DeadBand { get; set; }
         string Name { get; set; }
         IDriver Parent { get; }
-        IDataServer Server { get; }
+        IDataServer  Server { get; }
         IEnumerable<ITag> Items { get; }
         bool AddItems(IList<TagMetaData> items);
         bool AddTags(IEnumerable<ITag> tags);
